@@ -21,40 +21,107 @@ export const navLinks = [
   },
 ];
 
-export const clientReviews = [
+export const clientProjects = [
   {
     id: 1,
-    name: 'Emily Johnson',
-    position: 'Marketing Director at GreenLeaf',
-    img: 'assets/review1.png',
-    review:
-      'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+    title: 'Frontpage',
+    category: 'Branding Platform',
+    img: 'assets/project1.png',
+    description: 'A platform to unify online identities with real-time updates.',
   },
   {
     id: 2,
-    name: 'Mark Rogers',
-    position: 'Founder of TechGear Shop',
-    img: 'assets/review2.png',
-    review:
-      'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+    title: 'RSS Video Creator',
+    category: 'Automated Content',
+    img: 'assets/project2.png',
+    description: 'Automates content creation by transforming JSON to video.',
   },
   {
     id: 3,
-    name: 'John Dohsas',
-    position: 'Project Manager at UrbanTech ',
-    img: 'assets/review3.png',
-    review:
-      'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+    title: 'Marketing Analytics Tool',
+    category: 'Real-Time Data',
+    img: 'assets/project3.png',
+    description: 'Processes data to provide real-time marketing insights.',
   },
   {
     id: 4,
-    name: 'Ether Smith',
-    position: 'CEO of BrightStar Enterprises',
-    img: 'assets/review4.png',
-    review:
-      'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+    title: 'AI Workflow Integration',
+    category: 'Automation & Efficiency',
+    img: 'assets/project4.png',
+    description: 'AI-driven workflows to enhance operational efficiency.',
+  },
+  {
+    id: 5,
+    title: 'Client Workflow Automation',
+    category: 'Task Automation',
+    img: 'assets/project5.png',
+    description: 'Replaced manual processes with automated task management.',
+  },
+  {
+    id: 6,
+    title: 'Ad Research Dashboard',
+    category: 'AI-Powered Insights',
+    img: 'assets/project6.png',
+    description: 'Centralized dashboard for targeted ad research and trends.',
+  },
+  {
+    id: 7,
+    title: 'Bulk Upload Tool',
+    category: 'Content Management',
+    img: 'assets/project7.png',
+    description: 'Streamlined content upload for faster delivery.',
+  },
+  {
+    id: 8,
+    title: 'Data Reporting System',
+    category: 'Reporting',
+    img: 'assets/project8.png',
+    description: 'Automated report generation for internal departments.',
+  },
+  {
+    id: 9,
+    title: 'Accessibility Dashboard',
+    category: 'Web Accessibility',
+    img: 'assets/project9.png',
+    description: 'Real-time monitoring of web accessibility standards.',
+  },
+  {
+    id: 10,
+    title: 'Feedback Platform',
+    category: 'User Engagement',
+    img: 'assets/project10.png',
+    description: 'Platform for gathering feedback and tracking requests.',
+  },
+  {
+    id: 11,
+    title: 'UX/UI Standardization',
+    category: 'Design Optimization',
+    img: 'assets/project11.png',
+    description: 'Standardized UX/UI designs for a cohesive user experience.',
+  },
+  {
+    id: 12,
+    title: 'AI Content Generator',
+    category: 'AI Content Creation',
+    img: 'assets/project12.png',
+    description: 'Generates high-quality content with AI-driven tools.',
+  },
+  {
+    id: 13,
+    title: 'Server Scaling System',
+    category: 'DevOps & Scaling',
+    img: 'assets/project13.png',
+    description: 'Manages and scales servers for high-traffic applications.',
+  },
+  {
+    id: 14,
+    title: 'Document Generator',
+    category: 'Document Automation',
+    img: 'assets/project14.png',
+    description: 'Automated document creation for efficient presentations.',
   },
 ];
+
 
 export const myProjects = [
   {
@@ -257,32 +324,51 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
   };
 };
 
+
 export const workExperiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: '/assets/framer.svg',
-    animation: 'victory',
+    name: 'Frontpage',
+    pos: 'Co-Founder & Lead Developer',
+    duration: 'January 2024 - Present',
+    title: 'Architected and developed a platform to unify digital identities. Managed front-end, back-end, cloud infrastructure, and led a successful Kickstarter campaign.',
+    icon: '/assets/frontpage.png', // Placeholder for Frontpage logo
+    animation: 'salute', // Placeholder animation for building projects
   },
   {
     id: 2,
-    name: 'Figma',
-    pos: 'Web Developer',
-    duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: '/assets/figma.svg',
-    animation: 'clapping',
+    name: 'SapphireStudios',
+    pos: 'Lead Full Stack Developer (Technical Lead)',
+    duration: 'March 2021 - December 2023',
+    title: 'Led a team of developers, implemented microservices architecture, and managed cloud infrastructure using AWS and GCP. Streamlined workflows and collaborated with executives on strategy.',
+    icon: '/assets/sapphirestudioscontent_logo.jpg', // Placeholder for SapphireStudios logo
+    animation: 'clapping', // Placeholder animation for leadership role
   },
   {
     id: 3,
-    name: 'Notion',
-    pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: '/assets/notion.svg',
-    animation: 'salute',
+    name: 'Freelance Consultant & Developer',
+    pos: 'AI Integration Specialist',
+    duration: 'Ongoing',
+    title: 'Consulted businesses on AI integration, focusing on operational efficiency and automation. Developed software solutions tailored to client needs, emphasizing scalability and automation.',
+    icon: '/assets/freelance.svg', // Placeholder for a freelance consultant logo
+    animation: 'victory', // Placeholder animation for consulting role
+  },
+  {
+    id: 4,
+    name: 'AudioEye',
+    pos: 'JavaScript Engineer',
+    duration: 'April 2022 - November 2022',
+    title: 'Ensured web accessibility compliance, improved website inclusivity, and fixed accessibility issues using JavaScript. Enhanced performance for diverse user needs.',
+    icon: '/assets/audioeye.png', // Placeholder for AudioEye logo
+    animation: 'clapping', // Placeholder animation for debugging
+  },
+  {
+    id: 5,
+    name: 'General Assembly',
+    pos: 'Software Engineering Bootcamp Graduate',
+    duration: 'Completed April 2022',
+    title: 'Completed an immersive bootcamp covering full-stack development, focusing on JavaScript, Python, and Node.js, with a strong emphasis on agile practices.',
+    icon: '/assets/generalassembly.png', // Placeholder for General Assembly logo
+    animation: 'salute', // Placeholder animation for learning/training
   },
 ];
